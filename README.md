@@ -1,9 +1,5 @@
 # Stanford Code in Place Final Project
 
-![](simba.png)
-
-Photo Credit: Chris Piech
-
 Table of Contents
 -----------------
 
@@ -20,6 +16,10 @@ Table of Contents
 * [Possible Enhancements](#possible-enhancements)
 
 ## Simba Friends Twitter Bot
+
+![](simba.png)
+
+Photo Credit: Chris Piech
 
 Simba Friends Twitter Bot was inspired by Simba, the adorable Code in Place dog. Using Python programming language and Requests, Pillow, and Twython libraries, I created a bot that downloads a pet photo from Unsplash, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the Simba Friends Bot Twitter account. 
 

@@ -18,6 +18,7 @@ Table of Contents
 * [Set Up](#set-up)
   * [GitHub Actions](#github-actions)
   * [Local](#local)
+* [Image Filter Algorithms](#image-filter-algorithms)
 * [Program Steps Summary](#program-steps-summary)
 * [Milestones](#milestones)
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
@@ -33,6 +34,8 @@ Table of Contents
 ### GitHub Actions
 
 ### Local
+
+## Image Filter Algorithms
 
 ## Program Steps Summary
 

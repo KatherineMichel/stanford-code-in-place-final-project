@@ -4,13 +4,13 @@
 
 ![](simba.png)
 
-Photo Credit: Chris Piech
+Simba; Photo Credit: Chris Piech
 
-Simba Friends Twitter Bot was inspired by Simba, the adorable Code in Place dog. Using Python programming language and Requests, Pillow, and Twython libraries, I created a bot that downloads a pet photo from Unsplash, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the Simba Friends Bot Twitter account. 
+[Simba Friends Twitter Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a bot that downloads a pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the Simba Friends Bot Twitter account. 
 
 ### GitHub Actions Proof of Concept
 
-Initially, I got the bot working locally. But my stretch goal was to figure out how to run the bot solely via GitHub Actions. I wasn't sure if this was even possible, because a photo would need to be downloaded, modified, saved, and tweeted via GitHub Actions for all of this work. Amazingly, I was able to create a successful proof of concept!
+Initially, I got the bot working locally. But my stretch goal was to figure out how to run the bot solely via [GitHub Actions](https://github.com/features/actions). I wasn't sure if this was even possible, because a photo would need to be downloaded, modified, saved, and tweeted via GitHub Actions for all of this to work. Amazingly, I was able to create a successful proof of concept!
 
 Table of Contents
 -----------------

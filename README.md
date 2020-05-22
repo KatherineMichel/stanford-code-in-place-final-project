@@ -6,15 +6,18 @@
 
 Simba; Photo Credit: Chris Piech
 
-[Simba Friends Twitter Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a bot that downloads a pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the Simba Friends Bot Twitter account. 
+[Simba Friends Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a [program](photo.py) that downloads a random pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account. 
 
 ### GitHub Actions Proof of Concept
 
-Initially, I got the bot working locally. But my stretch goal was to figure out how to run the bot solely via [GitHub Actions](https://github.com/features/actions). I wasn't sure if this was even possible, because a photo would need to be downloaded, modified, saved, and tweeted via GitHub Actions for all of this to work. Amazingly, I was able to create a successful proof of concept!
+Initially, I got the bot working locally. But my stretch goal was to figure out how to run the bot solely via [GitHub Actions](https://github.com/features/actions). I wasn't sure if this was even possible, because a photo would need to be downloaded, modified, saved, and tweeted via a GitHub Actions `$GITHUB_WORKSPACE` for all of this to work. Amazingly, I was able to create a successful proof of concept!
 
 Table of Contents
 -----------------
 
+* [Set Up](#set-up)
+  * [GitHub Actions](#github-actions)
+  * [Local](#local)
 * [Program Steps Summary](#program-steps-summary)
 * [Milestones](#milestones)
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
@@ -24,6 +27,12 @@ Table of Contents
   * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
   * [Milestone 6- Submit](#milestone-6--submit)
 * [Possible Enhancements](#possible-enhancements)
+
+## Setup
+
+### GitHub Actions
+
+### Local
 
 ## Program Steps Summary
 

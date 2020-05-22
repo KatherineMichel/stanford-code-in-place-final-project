@@ -1,20 +1,5 @@
 # Stanford Code in Place Final Project
 
-Table of Contents
------------------
-
-* [Simba Friends Twitter Bot](#simba-friends-twitter-bot)
-  * [GitHub Actions Proof of Concept](#github-actions-proof-of-concept)
-* [Program Steps Summary](#program-steps-summary)
-* [Milestones](#milestones)
-  * [Milestone 1- Download the Image](#milestone-1--download-the-image)
-  * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
-  * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
-  * [Milestone 4 (Experimental)- Run the Bot via GitHub Actions](#milestone-4-experimental--run-the-bot-via-github-actions)
-  * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
-  * [Milestone 6- Submit](#milestone-6--submit)
-* [Possible Enhancements](#possible-enhancements)
-
 ## Simba Friends Twitter Bot
 
 ![](simba.png)
@@ -26,6 +11,19 @@ Simba Friends Twitter Bot was inspired by Simba, the adorable Code in Place dog.
 ### GitHub Actions Proof of Concept
 
 Initially, I got the bot working locally. But my stretch goal was to figure out how to run the bot solely via GitHub Actions. I wasn't sure if this was even possible, because a photo would need to be downloaded, modified, saved, and tweeted via GitHub Actions for all of this work. Amazingly, I was able to create a successful proof of concept!
+
+Table of Contents
+-----------------
+
+* [Program Steps Summary](#program-steps-summary)
+* [Milestones](#milestones)
+  * [Milestone 1- Download the Image](#milestone-1--download-the-image)
+  * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
+  * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
+  * [Milestone 4 (Experimental)- Run the Bot via GitHub Actions](#milestone-4-experimental--run-the-bot-via-github-actions)
+  * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
+  * [Milestone 6- Submit](#milestone-6--submit)
+* [Possible Enhancements](#possible-enhancements)
 
 ## Program Steps Summary
 

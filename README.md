@@ -1,6 +1,7 @@
 # Stanford Code in Place Final Project
 
 ![](simba.png)
+
 Photo Credit: Chris Piech
 
 Table of Contents

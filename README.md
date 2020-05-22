@@ -16,8 +16,9 @@ Table of Contents
 -----------------
 
 * [Set Up](#set-up)
-  * [GitHub Actions](#github-actions)
-  * [Local](#local)
+  * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
+  * [Store Secrets](#store-secrets)
+* [How the Program Works](#how-the-program-works)
 * [Image Filter Algorithms](#image-filter-algorithms)
 * [Program Steps Summary](#program-steps-summary)
 * [Milestones](#milestones)
@@ -31,9 +32,13 @@ Table of Contents
 
 ## Setup
 
-### GitHub Actions
+### Create a Twitter Developer Account
 
-### Local
+### Store Secrets
+
+#### GitHub Actions
+
+#### Local
 
 ## Image Filter Algorithms
 

@@ -1,6 +1,10 @@
 # Stanford Code in Place Final Project
 
+![](simba.png)
+Photo Credit: Chris Piech
+
 Table of Contents
+-----------------
 
 * [Simba Friends Twitter Bot](#simba-friends-twitter-bot)
   * [GitHub Actions Proof of Concept](#github-actions-proof-of-concept)

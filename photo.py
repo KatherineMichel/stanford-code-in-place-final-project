@@ -4,7 +4,7 @@ import os
 import random
 
 # Import the third-party libraries needed to run the code
-from PIL import Image
+from PIL import Image, ImageFilter
 import requests
 from twython import Twython
 

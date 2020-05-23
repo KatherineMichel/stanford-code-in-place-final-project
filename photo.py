@@ -1,11 +1,14 @@
+# Import the Python standard libraries needed to run the code
 import os
 from os.path import exists
 import random
-import requests
 
+# Import the third-party libraries needed to run the code
 from PIL import Image
+import requests
 from twython import Twython
 
+# Pass the environment variables into Twython to be used to authenticate into Twitter and tweet
 twitter = Twython(
     os.environ.get("APP_KEY"),
     os.environ.get("APP_SECRET"),

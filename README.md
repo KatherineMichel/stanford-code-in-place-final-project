@@ -61,7 +61,7 @@ Table of Contents
 
 `radius` set to 4
 
-![](demo-photos/unsharp-mask-4.jpg)
+![](demo-photos/unsharp-mask-6.jpg)
 
 ### Kernel
 

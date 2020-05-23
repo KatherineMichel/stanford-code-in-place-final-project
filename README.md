@@ -26,22 +26,43 @@ Table of Contents
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
   * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
   * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
-  * [Milestone 4 (Experimental)- Run the Bot via GitHub Actions](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
+  * [Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
   * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
   * [Milestone 6- Submit](#milestone-6--submit)
 * [Possible Enhancements](#possible-enhancements)
 
 ## Set Up
 
+After using the bot both locally and via GitHub Actions, I personally prefer using it via GitHub Actions. GitHub Actions is more stable than ever and it's a luxury to avoid the messiness of setting up and managing a local environment.
+
 ### Create a Twitter Developer Account
+
+Following the instructions of the Twitter Developer docs, I created the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account, including verifying a phone number. Using that account, I created a Twitter Developer account under the "Hobbyist" category, choosing "Making a bot" as my task.
+
+In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the "secrets" that would need to be passed into `Twython` as environmental variables in order to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet.
+
+* API key a.k.a `APP_KEY`
+* API secret key a.k.a. `APP_SECRET`
+* Access token a.k.a `OAUTH_TOKEN`
+* Access token secret a.k.a `OAUTH_TOKEN_SECRET`
 
 ### GitHub Actions Set Up
 
+There are two steps to setting Simba Friends Bot up in a GitHub repo. 
+
 #### Store Secrets
 
-### Set Event or Cron Job
+The secrets can be stored encrypted in the repo settings, to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
+
+#### Set Up the Event
+
+An [event](https://help.github.com/en/actions/reference/events-that-trigger-workflows) needs to happen to trigger the GitHub Action workflow to run the program. The Simba Friends Bot GitHub Action workflow is set up to trigger after a "push" to the GitHub branch, or based on a [cron schedule](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule) that causes the GitHub Action to be run at certain times of day. Whichever one is not being used can be commented out.
 
 ### Local Setup
+
+For local setup, I cloned the repository, changed directory into it, and created a virtual environment.
+
+Because GitHub Actions worked for me and I liked it, I did not set up a cron job. 
 
 ## Image Filter Algorithms
 

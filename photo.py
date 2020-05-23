@@ -90,14 +90,14 @@ def red_algorithm(new_image):
 
 # Apply a "Blur" Algorithm
 def blur_algorithm(new_image, file_path):
-    modified_image = new_image.filter(ImageFilter.BLUR)
-    # modified_image = new_image.filter(ImageFilter.GaussianBlur(radius = 2))
+    modified_image = new_image.filter(ImageFilter.GaussianBlur(radius = 2))
+    # modified_image = new_image.filter(ImageFilter.BLUR)
     # modified_image = new_image.filter(ImageFilter.BoxBlur(radius = 2))
     save_image(modified_image, file_path)
 
 # Apply the "Unsharp Mask" Algorithm
 def unsharp_mask_algorithm(new_image, file_path):
-    modified_image = new_image.filter(ImageFilter.UnsharpMask(radius = 3))
+    modified_image = new_image.filter(ImageFilter.UnsharpMask(radius = 6))
     save_image(modified_image, file_path)
 
 # Apply the "Kernel" Algorithm

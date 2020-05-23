@@ -51,7 +51,7 @@ Regardless of whether the program is run locally or via GitHub Actions, a develo
 
 Something I learned from working through this project is that a GitHub Actions development environment can replicate a local development environment. 
 
-In both my local development environment and GitHub Actions development environment, Python 3.8 is used by default, pip is installed, and the Requests, Pillow, and Twython libraries are installed as dependencies used by the project. The repo master branch is access, the environment variables are available, and the program is run by calling  `python photo.py`.
+In both my local development environment and GitHub Actions development environment, Python 3.8 is used by default, pip is installed, and the Requests, Pillow, and Twython libraries are installed as dependencies used by the project. The repo master branch is accessed, the environment variables are available, and the program is run by calling  `python photo.py`.
 
 The Python and third-party libraries required to run the program are imported, the environment variables are passed into Twython, and Python 3.8 interprets the `photo.py` file.
 

@@ -78,6 +78,16 @@ def sepia_algorithm(new_image, file_path):
     modified_image = sepia_image
     save_image(modified_image, file_path)
 
+# Apply the "Blue" Algorithm
+def blue_algorithm(new_image):
+
+    save_image(modified_image, file_path)
+
+# Apply the "Red" Algorithm
+def red_algorithm(new_image):
+
+    save_image(modified_image, file_path)
+
 # Apply the "Negative" Algorithm
 def negative_algorithm(new_image, file_path):
 
@@ -97,16 +107,6 @@ def negative_algorithm(new_image, file_path):
     modified_image = negative_image
     save_image(modified_image, file_path)
     
-# Apply the "Blue" Algorithm
-def blue_algorithm(new_image):
-
-    save_image(modified_image, file_path)
-
-# Apply the "Red" Algorithm
-def red_algorithm(new_image):
-
-    save_image(modified_image, file_path)
-
 # Save modified image and return; optionally, show the image after the transformation
 def save_image(modified_image, file_path):
     modified_image.show()

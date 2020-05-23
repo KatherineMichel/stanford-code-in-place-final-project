@@ -35,7 +35,7 @@ def main():
     # Show the image before the transformation
     new_image.show()
 
-    # Randomly choose an image filter algorithm from a list and call its function to apply the filter to the image
+    # Randomly choose an image filter algorithm function from a list and call the function to apply the filter to the image
     choices = [no_change, black_and_white_algorithm, sepia_algorithm, blur_algorithm, unsharp_mask_algorithm, kernel_algorithm, negative_algorithm]
     algorithm = random.choice(choices)(new_image, file_path)
     

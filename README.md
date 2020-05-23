@@ -16,7 +16,7 @@ Table of Contents
 -----------------
 
 * [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
-* [Image Filter Algorithms](#image-filter-algorithms)
+* [Image Filter Algorithm Examples](#image-filter-algorithm-examples)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
 * [Project Set Up](#project-set-up)
@@ -37,14 +37,47 @@ Table of Contents
 
 To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
 
-## Image Filter Algorithms
+## Image Filter Algorithm Examples
 
-* Black and white
-* Sepia
-* Negative
-* Blue
-* Red
-* No change
+### No change
+
+![](demo-photos/jalitha-hewage-_NL4b8hfOww-unsplash.jpg)
+
+### Black and white
+
+![](demo-photos/black-and-white.jpg)
+
+### Sepia
+
+![](demo-photos/sepia.jpg)
+
+### Gaussian Blur
+
+`radius` set to 2
+
+![](demo-photos/gaussian-blur-kernel-2.jpg)
+
+`radius` set to 4
+
+![](demo-photos/gaussian-blur-kernel-2.jpg)
+
+### Unsharp Mask
+
+`radius` set to 4
+
+![](demo-photos/unsharp-mask-4.jpg)
+
+### Kernel
+
+![](demo-photos/kernel.jpg)
+
+### Negative
+
+![](demo-photos/negative.jpg)
+
+### Blue
+
+### Red
 
 ## Local Environment Versus GitHub Actions Environment
 

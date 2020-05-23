@@ -15,13 +15,13 @@ Initially, I got the bot working locally. But my stretch goal was to figure out 
 Table of Contents
 -----------------
 
+* [How the Program Works](#how-the-program-works)
+  * [Program Steps Summary](#program-steps-summary)
+* [Image Filter Algorithms](#image-filter-algorithms)
 * [Set Up](#set-up)
   * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
   * [GitHub Actions Set Up](#github-actions-setup-up)
   * [Local Set Up](#local-set-up)
-* [Image Filter Algorithms](#image-filter-algorithms)
-* [How the Program Works](#how-the-program-works)
-  * [Program Steps Summary](#program-steps-summary)
 * [Milestones](#milestones)
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
   * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
@@ -31,13 +31,28 @@ Table of Contents
   * [Milestone 6- Submit](#milestone-6--submit)
 * [Possible Enhancements](#possible-enhancements)
 
+## How This Program Works
+
+### Program Steps Summary
+
+* Download a random image from an Unsplash curated "Personable Pets" collection
+* Randomly choose an image filter algorithm from a list
+* Call that image filter algorithm function to apply the filter to the image
+* Tweet the modified image to a Simba Friends Bot Twitter account, using the Twitter API and Twython
+* Delete the image
+
+## Image Filter Algorithms
+
+* Black and white
+* No change
+
 ## Set Up
 
 After using the bot both locally and via GitHub Actions, I personally prefer using it via GitHub Actions. GitHub Actions is more stable than ever and it's a luxury to avoid the messiness of setting up and managing a local environment.
 
 ### Create a Twitter Developer Account
 
-Following the instructions of the Twitter Developer docs, I created the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account, including verifying a phone number. Using that account, I created a Twitter Developer account under the "Hobbyist" category, choosing "Making a bot" as my task.
+Following the instructions of the [Twitter Developer](https://developer.twitter.com/) docs, I created the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account, including verifying a phone number. Using that account, I created a Twitter Developer account under the "Hobbyist" category, choosing "Making a bot" as my task.
 
 In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the "secrets" that would need to be passed into `Twython` as environmental variables in order to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet.
 
@@ -69,26 +84,11 @@ $ export OAUTH_TOKEN="<oauth-token>"
 $ export OAUTH_TOKEN_SECRET="<oauth-token-secret>"
 ```
 
-I ran the program via the terminal and used the error info to debug. Once the program was working properly, had I not used GitHub Actions, I would have created a local cron job to run the program on a schedule. 
-
-## Image Filter Algorithms
-
-* Black and white
-* No change
-
-## How This Program Works
-
-### Program Steps Summary
-
-* Download a random image from an Unsplash curated "Personable Pets" collection
-* Randomly choose an image filter algorithm from a list
-* Call that image filter algorithm function to apply the filter to the image
-* Tweet the modified image to a Simba Friends Bot Twitter account, using the Twitter API and Twython
-* Delete the image
+I ran the program via the terminal and used the error info to debug. Once the program was working properly, had I not used GitHub Actions, I would have created a local [cron job](https://en.wikipedia.org/wiki/Cron) to run the program on a schedule. 
 
 ## Milestones
 
-In our assignment instructions, it was suggested that we use milestones. These were my project milestones.
+In our assignment instructions, it was suggested that we use milestones. These were my project milestones:
 
 ### Milestone 1- Download the Image
 
@@ -117,7 +117,7 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 ### Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)
 
-* Create a GitHub Action that can cache the downloaded photo so the bot can be run from GitHub
+* Create a GitHub Action that can run the program solely via GitHub
 
 ### Milestone 5- Publish
 
@@ -138,4 +138,7 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 ## Possible Enhancements
 
+* Add a proper Change Log
+* Optionally, create the option to publish to the PyPI test instance first
 * Add a photographer credit (not required by Unsplash) as the status update
+* Add additional image filter algorithms

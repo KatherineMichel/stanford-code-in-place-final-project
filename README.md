@@ -15,7 +15,7 @@ Initially, I got the bot working locally. But my stretch goal was to figure out 
 Table of Contents
 -----------------
 
-* [How This Program Works](#how-this-program-works)
+* [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
 * [Image Filter Algorithms](#image-filter-algorithms)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
@@ -33,9 +33,9 @@ Table of Contents
   * [Milestone 7- Submit Assignment](#milestone-7--submit-assignment)
 * [Possible Enhancements](#possible-enhancements)
 
-## How This Program Works
+## How the Program and GitHub Actions Workflow Work
 
-To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section.    
+To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
 
 ## Image Filter Algorithms
 

@@ -2,14 +2,14 @@
 name: Process Photo
 
 # When a push is made to the master branch, run this workflow
-on:
-  push:
-    branches: [ master ]
+# on:
+  # push:
+    # branches: [ master ]
 
 # At intervals specified by the schedule, run this workflow
-# on:
-  # schedule:
-    # - cron: '*/10 * * * *'
+on:
+  schedule:
+    - cron: '*/10 * * * *'
       
 # Create a development environment
 jobs:

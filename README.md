@@ -48,21 +48,28 @@ In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here 
 
 ### GitHub Actions Set Up
 
-There are two steps to setting Simba Friends Bot up in a GitHub repo. 
+There are two steps to setting [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) up in a GitHub repo. 
 
 #### Store Secrets
 
-The secrets can be stored encrypted in the repo settings, to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
+The secrets can be stored int he repo settings as [encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets), to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
 
 #### Set Up the Event
 
-An [event](https://help.github.com/en/actions/reference/events-that-trigger-workflows) needs to happen to trigger the GitHub Action workflow to run the program. The Simba Friends Bot GitHub Action workflow is set up to trigger after a "push" to the GitHub branch, or based on a [cron schedule](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule) that causes the GitHub Action to be run at certain times of day. Whichever one is not being used can be commented out.
+An [event](https://help.github.com/en/actions/reference/events-that-trigger-workflows) needs to happen to trigger the GitHub Action workflow to run the program. The Simba Friends Bot GitHub Action workflow is set up to trigger after a "[push](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags)" to the GitHub branch, or based on a [cron schedule](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule) that causes the GitHub Action to be run at certain times of day. Whichever one is not being used can be commented out.
 
 ### Local Setup
 
-For local setup, I cloned the repository, changed directory into it, and created a virtual environment.
+For local setup, I cloned the repository, changed directory into it, and created a virtual environment. I then used the terminal to `export` the environmental variables, so they could be accessed by the program. 
 
-Because GitHub Actions worked for me and I liked it, I did not set up a cron job. 
+```bash
+$ export APP_KEY="<app-key>"
+$ export APP_SECRET="<app-secret>"
+$ export OAUTH_TOKEN="<oauth-token>"
+$ export OAUTH_TOKEN_SECRET="<oauth-token-secret>"
+```
+
+I ran the program via the terminal and used the error info to debug. Once the program was working properly, had I not used GitHub Actions, I would have created a local cron job to run the program on a schedule. 
 
 ## Image Filter Algorithms
 
@@ -80,6 +87,8 @@ Because GitHub Actions worked for me and I liked it, I did not set up a cron job
 * Delete the image
 
 ## Milestones
+
+In our assignment instructions, it was suggested that we use milestones. These were my project milestones.
 
 ### Milestone 1- Download the Image
 
@@ -110,20 +119,23 @@ Because GitHub Actions worked for me and I liked it, I did not set up a cron job
 
 * Create a GitHub Action that can cache the downloaded photo so the bot can be run from GitHub
 
-### Milestone 5- Publish and Publicize
+### Milestone 5- Publish
 
 * Add PyPI packaging configurations to the GitHub repo where the code is hosted
 * Create a GitHub Action that can auto-publish the package when a release is tagged on GitHub
 * Tag the release and verify published to PyPI
+
+### Milestone 6- Publicize
+
 * Create a README.md with instructions for how to use the code
 * Create a blog post for fun, explaining how to set up this bot
+* Share my project with friends, family, and colleagues :)
 
-### Milestone 6- Submit
+### Milestone 7- Submit Assignment
 
 * Make assignment video and submit assignment :)
 * Sit back, drink some tea, and enjoy some cute pet photos at [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account.
 
 ## Possible Enhancements
 
-* Create a local cron job to run the bot at regular intervals (not necessary if using GitHub Actions; cron job can be run from GitHub Actions)
 * Add a photographer credit (not required by Unsplash) as the status update

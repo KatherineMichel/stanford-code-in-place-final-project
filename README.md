@@ -17,32 +17,40 @@ Table of Contents
 
 * [Set Up](#set-up)
   * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
-  * [Store Secrets](#store-secrets)
-* [How the Program Works](#how-the-program-works)
+  * [GitHub Actions Set Up](#github-actions-setup-up)
+  * [Local Set Up](#local-set-up)
 * [Image Filter Algorithms](#image-filter-algorithms)
-* [Program Steps Summary](#program-steps-summary)
+* [How the Program Works](#how-the-program-works)
+  * [Program Steps Summary](#program-steps-summary)
 * [Milestones](#milestones)
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
   * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
   * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
-  * [Milestone 4 (Experimental)- Run the Bot via GitHub Actions](#milestone-4-experimental--run-the-bot-via-github-actions)
+  * [Milestone 4 (Experimental)- Run the Bot via GitHub Actions](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
   * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
   * [Milestone 6- Submit](#milestone-6--submit)
 * [Possible Enhancements](#possible-enhancements)
 
-## Setup
+## Set Up
 
 ### Create a Twitter Developer Account
 
-### Store Secrets
+### GitHub Actions Set Up
 
-#### GitHub Actions
+#### Store Secrets
 
-#### Local
+### Set Event or Cron Job
+
+### Local Setup
 
 ## Image Filter Algorithms
 
-## Program Steps Summary
+* Black and white
+* No change
+
+## How This Program Works
+
+### Program Steps Summary
 
 * Download a random image from an Unsplash curated "Personable Pets" collection
 * Randomly choose an image filter algorithm from a list
@@ -77,7 +85,7 @@ Table of Contents
 * Call the `remove_file()` function to delete the image
 * Check your terminal and the associated Twitter account to verify tweet posted! 
 
-### Milestone 4 (Experimental)- Run the Bot via GitHub Actions
+### Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)
 
 * Create a GitHub Action that can cache the downloaded photo so the bot can be run from GitHub
 
@@ -92,9 +100,9 @@ Table of Contents
 ### Milestone 6- Submit
 
 * Make assignment video and submit assignment :)
-* Sit back, drink some tea, and enjoy some cute animal photos at https://twitter.com/SimbaFriendsBot 
+* Sit back, drink some tea, and enjoy some cute pet photos at [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account.
 
 ## Possible Enhancements
 
-* Create a local cron job to run the bot at regular intervals (not necessary if using GitHub Actions)
+* Create a local cron job to run the bot at regular intervals (not necessary if using GitHub Actions; cron job can be run from GitHub Actions)
 * Add a photographer credit (not required by Unsplash) as the status update

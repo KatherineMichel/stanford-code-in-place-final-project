@@ -6,7 +6,7 @@
 
 Simba; Photo Credit: Chris Piech
 
-[Simba Friends Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a [program](photo.py) that downloads a random pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the photo on the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account. 
+[Simba Friends Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a [program](photo.py) that downloads a random pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the image on the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account. 
 
 ### GitHub Actions Proof of Concept
 
@@ -15,11 +15,10 @@ Initially, I got the bot working locally. But my stretch goal was to figure out 
 Table of Contents
 -----------------
 
-* [How the Program Works](#how-the-program-works)
-  * [Program Steps Summary](#program-steps-summary)
+* [How This Program Works](#how-this-program-works)
 * [Image Filter Algorithms](#image-filter-algorithms)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
-* [I Prefer GitHub Actions](#i-prefer-github-actions)
+  * [I Prefer GitHub Actions](#i-prefer-github-actions)
 * [Project Set Up](#project-set-up)
   * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
   * [GitHub Actions Set Up](#github-actions-setup-up)
@@ -35,16 +34,8 @@ Table of Contents
 * [Possible Enhancements](#possible-enhancements)
 
 ## How This Program Works
-    
-Read the comments in the program file to better understand how the program works, or read the Milestones section.    
-    
-### Program Steps Summary
 
-* Download a random image from an Unsplash curated "Personable Pets" collection
-* Randomly choose an image filter algorithm from a list
-* Call that image filter algorithm function to apply the filter to the image
-* Tweet the modified image to a Simba Friends Bot Twitter account, using the Twitter API and Twython
-* Delete the image
+To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section.    
 
 ## Image Filter Algorithms
 
@@ -69,14 +60,14 @@ After running the program both locally and via GitHub Actions, I prefer using Gi
 
 There are a couple important set up steps to make this project work:
 
-* Create a Twitter Developer account, create an app in the account, and obtain the app secrets needed to programatically authenticate into Twitter and tweet from the account
+* Create a Twitter Developer account, create an app in the account, and obtain the app "secrets" needed to use the Twitter API to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet from the account
 * Designate an event or cron schedule as a trigger for the program to be run
 
 ### Create a Twitter Developer Account
 
 Following the instructions of the [Twitter Developer](https://developer.twitter.com/) docs, I created the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account, including verifying a phone number. Using that account, I created a Twitter Developer account under the "Hobbyist" category, choosing "Making a bot" as my task.
 
-In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the "secrets" that would need to be passed into `Twython` as environment variables in order to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet.
+In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the secrets that would need to be passed into `Twython` as environment variables.
 
 * API key a.k.a `APP_KEY`
 * API secret key a.k.a. `APP_SECRET`

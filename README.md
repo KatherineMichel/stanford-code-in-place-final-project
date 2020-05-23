@@ -28,9 +28,8 @@ Table of Contents
   * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
   * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
   * [Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
-  * [Milestone 5- Publish](#milestone-5--publish)
-  * [Milestone 6- Publicize](#milestone-6--publicize)
-  * [Milestone 7- Submit Assignment](#milestone-7--submit-assignment)
+  * [Milestone 5- Publicize](#milestone-5--publicize)
+  * [Milestone 6- Submit Assignment](#milestone-6--submit-assignment)
 * [Possible Enhancements](#possible-enhancements)
 
 ## Image Filter Algorithm Examples
@@ -180,26 +179,22 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 * Create a GitHub Action that can run the program solely via GitHub
 
-### Milestone 5- Publish
-
-* Add PyPI packaging configurations to the GitHub repo where the code is hosted
-* Create a GitHub Action that can auto-publish the package when a release is tagged on GitHub
-* Tag the release and verify published to PyPI
-
-### Milestone 6- Publicize
+### Milestone 5- Publicize
 
 * Create a README.md with instructions for how to use the code
 * Create a blog post for fun, explaining how to set up this bot
 * Share my project with friends, family, and colleagues :)
 
-### Milestone 7- Submit Assignment
+### Milestone 6- Submit Assignment
 
 * Make assignment video and submit assignment :)
 * Sit back, drink some tea, and enjoy some cute pet photos at [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account.
 
 ## Possible Enhancements
 
-* Add a proper Change Log
+* Add PyPI packaging configurations to the GitHub repo where the code is hosted
+* Create a GitHub Action that can auto-publish the package when a release is tagged on GitHub; tag the release and verify published to PyPI
 * Create the option to publish to the PyPI test instance first
+* Add a proper Change Log
 * Add a photographer credit (not required by Unsplash) as the status update
 * Add additional image filter algorithms

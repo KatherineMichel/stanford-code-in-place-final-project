@@ -1,6 +1,6 @@
 # Import the Python standard libraries needed to run the code
 import os
-from os.path import exists
+# from os.path import exists
 import random
 
 # Import the third-party libraries needed to run the code

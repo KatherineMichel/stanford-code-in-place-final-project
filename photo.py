@@ -54,8 +54,13 @@ def no_change(new_image, file_path):
     modified_image = new_image
     save_image(modified_image, file_path)
 
-# Apply the "Red" Algorithm
-def red_algorithm(new_image):
+# Apply the "Black and White" Algorithm
+def black_and_white_algorithm(new_image, file_path):
+    modified_image = new_image.convert('L')
+    save_image(modified_image, file_path)
+
+# Apply the "Sepia" Algorithm
+def sepia_algorithm(new_image, file_path):
 
     save_image(modified_image, file_path)
 
@@ -64,13 +69,8 @@ def blue_algorithm(new_image):
 
     save_image(modified_image, file_path)
 
-# Apply the "Black and White" Algorithm
-def black_and_white_algorithm(new_image, file_path):
-    modified_image = new_image.convert('L')
-    save_image(modified_image, file_path)
-
-# Apply the "Sepia" Algorithm
-def sepia_algorithm(new_image, file_path):
+# Apply the "Red" Algorithm
+def red_algorithm(new_image):
 
     save_image(modified_image, file_path)
 

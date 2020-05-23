@@ -18,7 +18,9 @@ Table of Contents
 * [How the Program Works](#how-the-program-works)
   * [Program Steps Summary](#program-steps-summary)
 * [Image Filter Algorithms](#image-filter-algorithms)
-* [Set Up](#set-up)
+* [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
+* [I Prefer GitHub Actions](#i-prefer-github-actions)
+* [Project Set Up](#project-set-up)
   * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
   * [GitHub Actions Set Up](#github-actions-setup-up)
   * [Local Set Up](#local-set-up)
@@ -33,7 +35,9 @@ Table of Contents
 * [Possible Enhancements](#possible-enhancements)
 
 ## How This Program Works
-
+    
+Read the comments in the program file to better understand how the program works, or read the Milestones section.    
+    
 ### Program Steps Summary
 
 * Download a random image from an Unsplash curated "Personable Pets" collection
@@ -47,15 +51,32 @@ Table of Contents
 * Black and white
 * No change
 
-## Set Up
+## Local Environment Versus GitHub Actions Environment
 
-After using the bot both locally and via GitHub Actions, I personally prefer using it via GitHub Actions. GitHub Actions is more stable than ever and it's a luxury to avoid the messiness of setting up and managing a local environment.
+Regardless of whether the program is run locally or via GitHub Actions, a development environment needs to exist that has all of the software installed that is needed to run the program.
+
+Something I learned from working through this project is that a GitHub Actions development environment can replicate a local development environment. 
+
+In both my local development environment and GitHub Actions development environment, Python 3.8 is used by default, pip is installed, and the Requests, Pillow, and Twython libraries are installed as dependencies used by the project. The repo master branch is access, the environment variables are available, and the program is run by calling  `python photo.py`.
+
+The Python and third-party libraries required to run the program are imported, the environment variables are passed into Twython, and Python 3.8 interprets the `photo.py` file.
+
+### I Prefer GitHub Actions
+
+After running the program both locally and via GitHub Actions, I prefer using GitHub Actions. Although a major GitHub Actions outage occurred while I was working on this project, GitHub Actions is improving over time. It feels like a luxury to avoid setting up and managing a longterm project in a local environment.
+    
+## Project Set Up
+
+There are a couple important set up steps to make this project work:
+
+* Create a Twitter Developer account, create an app in the account, and obtain the app secrets needed to programatically authenticate into Twitter and tweet from the account
+* Designate an event or cron schedule as a trigger for the program to be run
 
 ### Create a Twitter Developer Account
 
 Following the instructions of the [Twitter Developer](https://developer.twitter.com/) docs, I created the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account, including verifying a phone number. Using that account, I created a Twitter Developer account under the "Hobbyist" category, choosing "Making a bot" as my task.
 
-In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the "secrets" that would need to be passed into `Twython` as environmental variables in order to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet.
+In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here I obtained the "secrets" that would need to be passed into `Twython` as environment variables in order to programatically [authenticate](https://twython.readthedocs.io/en/latest/usage/starting_out.html#authentication) into Twitter and tweet.
 
 * API key a.k.a `APP_KEY`
 * API secret key a.k.a. `APP_SECRET`
@@ -64,19 +85,30 @@ In my "Simba and Friends Bot" app, I clicked on the "Keys and tokens" tab. Here 
 
 ### GitHub Actions Set Up
 
-There are two steps to setting [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) up in a GitHub repo. 
+There are two steps to setting [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) up in a GitHub repo:
 
 #### Store Secrets
 
-The secrets can be stored in the repo settings as [encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets), to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
+The secrets can be stored in the repo settings as [encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) and made available to the program by variables in the GitHub Actions workflow file. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environment variable name and value, then "Add secret". Do this four times, once for each secret. 
 
 #### Set Up the Event
 
 An [event](https://help.github.com/en/actions/reference/events-that-trigger-workflows) needs to happen to trigger the GitHub Action workflow to run the program. The Simba Friends Bot GitHub Action workflow is set up to trigger after a "[push](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags)" to the GitHub branch, or based on a [cron schedule](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onschedule) that causes the GitHub Action to be run at certain times of day. Whichever one is not being used can be commented out.
 
+```yaml
+on:
+  push:
+    branches: [ master ]
+
+on:
+  schedule:
+    # This line can be altered to change the schedule
+    - cron: '2 * * * *'
+```
+
 ### Local Setup
 
-For local setup, I cloned the repository, changed directory into it, and created a virtual environment. I then used the terminal to `export` the environmental variables, so they could be accessed by the program. 
+For local setup, I cloned the repository, changed directory into it, and created a virtual environment. I then used the terminal to `export` the environment variables, so they could be accessed by the program. 
 
 ```bash
 $ export APP_KEY="<app-key>"
@@ -85,7 +117,7 @@ $ export OAUTH_TOKEN="<oauth-token>"
 $ export OAUTH_TOKEN_SECRET="<oauth-token-secret>"
 ```
 
-I ran the program via the terminal and used the error info to debug. Once the program was working properly, had I not used GitHub Actions, I would have created a local [cron job](https://en.wikipedia.org/wiki/Cron) to run the program on a schedule. 
+I ran the program via the terminal and used the error info to debug. Once the program was working properly, I pushed the code back to GitHub and used GitHub Actions. Had GitHub Actions not worked, I would have created a local [cron job](https://en.wikipedia.org/wiki/Cron) to run the program on a schedule. 
 
 ## Milestones
 

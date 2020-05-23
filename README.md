@@ -41,6 +41,7 @@ To better understand how the program works, read the comments in the [program](p
 
 * Black and white
 * Sepia
+* Negative
 * Blue
 * Red
 * No change

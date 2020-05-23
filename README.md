@@ -55,11 +55,11 @@ To better understand how the program works, read the comments in the [program](p
 
 `radius` set to 2
 
-![](demo-photos/gaussian-blur-kernel-2.jpg)
+![](demo-photos/gaussian-blur-2.jpg)
 
 `radius` set to 4
 
-![](demo-photos/gaussian-blur-kernel-2.jpg)
+![](demo-photos/gaussian-blur-4.jpg)
 
 ### Unsharp Mask
 

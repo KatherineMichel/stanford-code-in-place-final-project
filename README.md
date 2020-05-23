@@ -59,7 +59,7 @@ Table of Contents
 
 ### Unsharp Mask
 
-`radius` set to 4
+`radius` set to 6
 
 ![](demo-photos/unsharp-mask-6.jpg)
 

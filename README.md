@@ -27,8 +27,9 @@ Table of Contents
   * [Milestone 2- Modify the Image](#milestone-2--modify-the-image)
   * [Milestone 3- Tweet the Image](#milestone-3--tweet-the-image)
   * [Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
-  * [Milestone 5- Publish and Publicize](#milestone-5--publish-and-publicize)
-  * [Milestone 6- Submit](#milestone-6--submit)
+  * [Milestone 5- Publish](#milestone-5--publish)
+  * [Milestone 6- Publicize](#milestone-6--publicize)
+  * [Milestone 7- Submit Assignment](#milestone-7--submit-assignment)
 * [Possible Enhancements](#possible-enhancements)
 
 ## How This Program Works
@@ -67,7 +68,7 @@ There are two steps to setting [Simba Friends Bot](https://twitter.com/SimbaFrie
 
 #### Store Secrets
 
-The secrets can be stored int he repo settings as [encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets), to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
+The secrets can be stored in the repo settings as [encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets), to be accessed by the program via GitHub Actions variables. Click on the "Settings" tab, then "Secrets". Click on "New secret", entering the environmental variable name and value, then "Add secret". Do this four times, once for each secret. 
 
 #### Set Up the Event
 
@@ -139,6 +140,6 @@ In our assignment instructions, it was suggested that we use milestones. These w
 ## Possible Enhancements
 
 * Add a proper Change Log
-* Optionally, create the option to publish to the PyPI test instance first
+* Create the option to publish to the PyPI test instance first
 * Add a photographer credit (not required by Unsplash) as the status update
 * Add additional image filter algorithms

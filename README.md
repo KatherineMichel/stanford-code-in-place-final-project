@@ -41,8 +41,8 @@ To better understand how the program works, read the comments in the [program](p
 
 * Black and white
 * Sepia
-* Red
 * Blue
+* Red
 * No change
 
 ## Local Environment Versus GitHub Actions Environment

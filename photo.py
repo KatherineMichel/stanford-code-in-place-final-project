@@ -36,7 +36,7 @@ def main():
     new_image.show()
 
     # Randomly choose an image filter algorithm from a list and call its function to apply the filter to the image
-    choices = [no_change, black_and_white_algorithm]
+    choices = [no_change, black_and_white_algorithm, sepia_algorithm, negative_algorithm]
     algorithm = random.choice(choices)(new_image, file_path)
     
     # Open the modified image
@@ -62,8 +62,41 @@ def black_and_white_algorithm(new_image, file_path):
 # Apply the "Sepia" Algorithm
 def sepia_algorithm(new_image, file_path):
 
+    width, height = new_image.size
+    sepia_image = Image.new("RGB",(width, height))
+    raw_pixels = new_image.load()
+    sepia_pixels = sepia_image.load()
+
+    for y in range(height):
+        for x in range(width):
+            R,G,B = raw_pixels[x,y]
+            oR = (R*.393) + (G*.769) + (B*.189)
+            oG = (R*.349) + (G*.686) + (B*.168)
+            oB = (R*.272) + (G*.534) + (B*.131)
+            sepia_pixels[x,y] = (int(oR),int(oG),int(oB))
+
+    modified_image = sepia_image
     save_image(modified_image, file_path)
 
+# Apply the "Negative" Algorithm
+def negative_algorithm(new_image, file_path):
+
+    width, height = new_image.size
+    negative_image = Image.new("RGB",(width, height))
+    raw_pixels = new_image.load()
+    negative_pixels = negative_image.load()
+
+    for y in range(height):
+        for x in range(width):
+            R,G,B = raw_pixels[x,y]
+            oR = (R*.393) + (G*.769) + (B*.189)
+            oG = (R*.349) + (G*.686) + (B*.168)
+            oB = (R*.272) + (G*.534) + (B*.131)
+            negative_pixels[x,y] = (255-R,255-G,255-B)
+
+    modified_image = negative_image
+    save_image(modified_image, file_path)
+    
 # Apply the "Blue" Algorithm
 def blue_algorithm(new_image):
 
@@ -76,7 +109,7 @@ def red_algorithm(new_image):
 
 # Save modified image and return; optionally, show the image after the transformation
 def save_image(modified_image, file_path):
-    # modified_image.show()
+    modified_image.show()
     modified_image.save(file_path)
     return modified_image
 

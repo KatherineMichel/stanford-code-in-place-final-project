@@ -21,7 +21,7 @@ Table of Contents
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
 * [Project Set Up](#project-set-up)
   * [Create a Twitter Developer Account](#create-a-twitter-developer-account)
-  * [GitHub Actions Set Up](#github-actions-setup-up)
+  * [GitHub Actions Set Up](#github-actions-set-up)
   * [Local Set Up](#local-set-up)
 * [Milestones](#milestones)
   * [Milestone 1- Download the Image](#milestone-1--download-the-image)
@@ -97,7 +97,7 @@ on:
     - cron: '2 * * * *'
 ```
 
-### Local Setup
+### Local Set Up
 
 For local setup, I cloned the repository, changed directory into it, and created a virtual environment. I then used the terminal to `export` the environment variables, so they could be accessed by the program. 
 

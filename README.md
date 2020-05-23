@@ -129,7 +129,7 @@ on:
 
 on:
   schedule:
-    # This line can be altered to change the schedule; in this example, the cron job will run very 10 minutes
+    # This line can be altered to change the schedule; in this example, the cron job will run every 10 minutes
     - cron: '*/10 * * * *'
 ```
 
@@ -162,8 +162,7 @@ In our assignment instructions, it was suggested that we use milestones. These w
 ### Milestone 2- Modify the Image
 
 * Unfortunately, Twython, Pillow, and SimpleImage were not compatible, so I used Pillow directly
-* My SimpleImage algorithms are commented out at the bottom of this file
-* Pass list of image filter algorithms into `random.choice()` to randomly choose an algorithm
+* Pass a list of image filter algorithms into `random.choice()` to randomly choose an algorithm
 * The chosen image filter algorithm function will be called, passing in the `new_image` and `file_path`
 * After the algorithm is applied, `save_image()` function will be called to save and return the modified image
 * Optionally, uncomment `modified_image.show()` to show the image locally after transformation

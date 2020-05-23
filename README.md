@@ -15,8 +15,8 @@ Initially, I got the bot working locally. But my stretch goal was to figure out 
 Table of Contents
 -----------------
 
-* [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
 * [Image Filter Algorithm Examples](#image-filter-algorithm-examples)
+* [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
 * [Project Set Up](#project-set-up)
@@ -32,10 +32,6 @@ Table of Contents
   * [Milestone 6- Publicize](#milestone-6--publicize)
   * [Milestone 7- Submit Assignment](#milestone-7--submit-assignment)
 * [Possible Enhancements](#possible-enhancements)
-
-## How the Program and GitHub Actions Workflow Work
-
-To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
 
 ## Image Filter Algorithm Examples
 
@@ -79,13 +75,17 @@ To better understand how the program works, read the comments in the [program](p
 
 ### Red
 
+## How the Program and GitHub Actions Workflow Work
+
+To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
+
 ## Local Environment Versus GitHub Actions Environment
 
 Regardless of whether the program is run locally or via GitHub Actions, a development environment needs to exist that has all of the software installed that is needed to run the program.
 
 Something I learned from working through this project is that a GitHub Actions development environment can replicate a local development environment. 
 
-In both my local development environment and GitHub Actions development environment, Python 3.8 is used by default, pip is installed, and the Requests, Pillow, and Twython libraries are installed as dependencies used by the project. The repo master branch is accessed, the environment variables are available, and the program is run by calling  `python photo.py`.
+In both my local development environment and GitHub Actions development environment, [Python 3.8](https://www.python.org/downloads/release/python-380/) is used by default, [pip](https://pypi.org/project/pip/) is installed, and the [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries are installed as dependencies used by the project. The repo master branch is accessed, the environment variables are available, and the program is run by calling  `python photo.py`.
 
 The Python and third-party libraries required to run the program are imported, the environment variables are passed into Twython, and Python 3.8 interprets the `photo.py` file.
 
@@ -130,8 +130,8 @@ on:
 
 on:
   schedule:
-    # This line can be altered to change the schedule
-    - cron: '2 * * * *'
+    # This line can be altered to change the schedule; in this example, the cron job will run very 10 minutes
+    - cron: '*/10 * * * *'
 ```
 
 ### Local Set Up

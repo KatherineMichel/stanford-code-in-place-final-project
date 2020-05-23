@@ -40,6 +40,9 @@ To better understand how the program works, read the comments in the [program](p
 ## Image Filter Algorithms
 
 * Black and white
+* Sepia
+* Red
+* Blue
 * No change
 
 ## Local Environment Versus GitHub Actions Environment

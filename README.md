@@ -73,10 +73,6 @@ This Jalitha Hewage [photo](https://unsplash.com/photos/_NL4b8hfOww) is used for
 
 ![](demo-photos/negative.jpg)
 
-### Blue
-
-### Red
-
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 
 ## My Favorite Example So Far
@@ -227,6 +223,6 @@ In our assignment instructions, it was suggested that we use milestones. These w
 * Create the option to publish to the PyPI test instance first
 * Add a proper Change Log
 * Add a photographer credit (not required by Unsplash) as the status update
-* Add additional image filter algorithms
+* Add additional image filter algorithms (ex. blue or red filter)
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>

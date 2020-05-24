@@ -78,16 +78,6 @@ def sepia_algorithm(new_image, file_path):
     modified_image = sepia_image
     save_image(modified_image, file_path)
 
-# Apply the "Blue" Algorithm
-def blue_algorithm(new_image):
-
-    save_image(modified_image, file_path)
-
-# Apply the "Red" Algorithm
-def red_algorithm(new_image):
-
-    save_image(modified_image, file_path)
-
 # Apply a "Blur" Algorithm
 def blur_algorithm(new_image, file_path):
     modified_image = new_image.filter(ImageFilter.GaussianBlur(radius = 2))

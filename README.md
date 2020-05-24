@@ -35,11 +35,13 @@ Table of Contents
 
 ## Image Filter Algorithm Examples
 
-### No change
+This Jalitha Hewage [photo](https://unsplash.com/photos/_NL4b8hfOww) is used for this demo. 
+
+### No Change
 
 ![](demo-photos/jalitha-hewage-_NL4b8hfOww-unsplash.jpg)
 
-### Black and white
+### Black and White
 
 ![](demo-photos/black-and-white.jpg)
 

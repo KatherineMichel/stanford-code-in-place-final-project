@@ -36,7 +36,7 @@ Table of Contents
 
 ## Image Filter Algorithm Examples
 
-This Jalitha Hewage [photo](https://unsplash.com/photos/_NL4b8hfOww) is used for this demo. 
+Here is an example [photo](https://unsplash.com/photos/_NL4b8hfOww) by Jalitha Hewage with all of the filters applied. 
 
 ### No Change
 

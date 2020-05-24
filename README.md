@@ -237,5 +237,6 @@ In our assignment instructions, it was suggested that we use milestones. These w
 * Add a proper Change Log
 * Add a photographer credit (not required by Unsplash) as the status update
 * Add additional image filter algorithms (ex. blue or red filter)
+* Create an `if` `else` statement to check if a photo exists before downloading (in case of an error that caused a photo to be downloaded, but not deleted; this might be irrelevant for GitHub Actions, if the workspace is destroyed after it runs
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>

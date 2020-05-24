@@ -221,10 +221,10 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 * Introduction (what project is about)
 * Show image filter algorithm examples and favorite example so far
-* Explain how GitHub Action workflow file works (preferred method)
 * Explain how `photo.py` file works
+* Explain how GitHub Action workflow file works (preferred method)
+* Show local development example in comparison
 * Show Actions tab build info
-* Show local development example
 * Show Twitter account
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>

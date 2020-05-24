@@ -31,6 +31,7 @@ Table of Contents
   * [Milestone 4- Run the Bot via GitHub Actions (Proof of Concept)](#milestone-4--run-the-bot-via-github-actions-proof-of-concept)
   * [Milestone 5- Publicize](#milestone-5--publicize)
   * [Milestone 6- Submit Assignment](#milestone-6--submit-assignment)
+* [Video Agenda](#video-agenda)
 * [Possible Enhancements](#possible-enhancements)
 
 ## Image Filter Algorithm Examples
@@ -213,6 +214,18 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 * Make assignment video and submit assignment :)
 * Sit back, drink some tea, and enjoy some cute pet photos at [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account.
+
+:top: <sub>[**Back to Top**](#table-of-contents)</sub>
+
+## Video Agenda
+
+* Introduction (what project is about)
+* Show image filter algorithm examples and favorite example so far
+* Explain how GitHub Action workflow file works (preferred method)
+* Explain how `photo.py` file works
+* Show Actions tab build info
+* Show local development example
+* Show Twitter account
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 

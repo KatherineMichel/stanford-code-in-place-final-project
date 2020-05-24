@@ -77,6 +77,8 @@ This Jalitha Hewage [photo](https://unsplash.com/photos/_NL4b8hfOww) is used for
 
 ### Red
 
+:top: <sub>[**back to top**](#table-of-contents)</sub>
+
 ## My Favorite Example So Far
 
 As I've been watching the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account tweet images, one photo in particular has been my absolute favorite so far. While most of the other photos modified by the `negative_algorithm()` have been downright creepy, the negative version of this Karina Vorozheeva [photo](https://unsplash.com/photos/rW-I87aPY5Y) is breathtaking. It's one of the most beautiful images I've ever seen. 
@@ -93,9 +95,13 @@ Original photo
 
 ![](demo-photos/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg)
 
+:top: <sub>[**back to top**](#table-of-contents)</sub>
+
 ## How the Program and GitHub Actions Workflow Work
 
 To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
+
+:top: <sub>[**back to top**](#table-of-contents)</sub>
 
 ## Local Environment Versus GitHub Actions Environment
 
@@ -110,6 +116,8 @@ The Python and third-party libraries required to run the program are imported, t
 ### I Prefer GitHub Actions
 
 After running the program both locally and via GitHub Actions, I prefer using GitHub Actions. Although a major GitHub Actions outage occurred while I was working on this project, GitHub Actions is improving over time. It feels like a luxury to avoid setting up and managing a longterm project in a local environment.
+    
+:top: <sub>[**back to top**](#table-of-contents)</sub>
     
 ## Project Set Up
 
@@ -165,6 +173,8 @@ $ export OAUTH_TOKEN_SECRET="<oauth-token-secret>"
 
 I ran the program via the terminal and used the error info to debug. Once the program was working properly, I pushed the code back to GitHub and used GitHub Actions. Had GitHub Actions not worked, I would have created a local [cron job](https://en.wikipedia.org/wiki/Cron) to run the program on a schedule. 
 
+:top: <sub>[**back to top**](#table-of-contents)</sub>
+
 ## Milestones
 
 In our assignment instructions, it was suggested that we use milestones. These were my project milestones:
@@ -207,6 +217,8 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 * Make assignment video and submit assignment :)
 * Sit back, drink some tea, and enjoy some cute pet photos at [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account.
+
+:top: <sub>[**back to top**](#table-of-contents)</sub>
 
 ## Possible Enhancements
 

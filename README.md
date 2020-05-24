@@ -16,6 +16,7 @@ Table of Contents
 -----------------
 
 * [Image Filter Algorithm Examples](#image-filter-algorithm-examples)
+* [My Favorite Example So Far](#my-favorite-example-so-far)
 * [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
@@ -73,6 +74,22 @@ Table of Contents
 ### Blue
 
 ### Red
+
+## My Favorite Example So Far
+
+As I've been watching the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account tweet images, one photo in particular has been my absolute favorite so far. While most of the other photos modified by the `negative_algorithm()` have been downright creepy, the negative version of this Karina Vorozheeva [photo](https://unsplash.com/photos/rW-I87aPY5Y) is breathtaking. It's one of the most beautiful images I've ever seen. 
+
+Negative version that was tweeted
+
+![](demo-photos/favorite-negative.jpg)
+
+Black and white version that was tweeted
+
+![](demo-photos/favorite-black-and-white.jpg)
+
+Original photo
+
+![](demo-photos/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg)
 
 ## How the Program and GitHub Actions Workflow Work
 

@@ -80,6 +80,10 @@ This Jalitha Hewage [photo](https://unsplash.com/photos/_NL4b8hfOww) is used for
 
 As I've been watching the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account tweet images, one photo in particular has been my absolute favorite so far. While most of the other photos modified by the `negative_algorithm()` have been downright creepy, the negative version of this Karina Vorozheeva [photo](https://unsplash.com/photos/rW-I87aPY5Y) is breathtaking. It's one of the most beautiful images I've ever seen. 
 
+Original photo
+
+![](demo-photos/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg)
+
 Negative version that was tweeted
 
 ![](demo-photos/favorite-negative.jpg)
@@ -87,10 +91,6 @@ Negative version that was tweeted
 Black and white version that was tweeted
 
 ![](demo-photos/favorite-black-and-white.jpg)
-
-Original photo
-
-![](demo-photos/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg)
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 

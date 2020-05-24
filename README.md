@@ -216,3 +216,5 @@ In our assignment instructions, it was suggested that we use milestones. These w
 * Add a proper Change Log
 * Add a photographer credit (not required by Unsplash) as the status update
 * Add additional image filter algorithms
+
+:top: <sub>[**back to top**](#table-of-contents)</sub>

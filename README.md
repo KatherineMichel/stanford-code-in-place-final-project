@@ -97,6 +97,10 @@ Black and white version that was tweeted
 
 ![](demo-photos/favorite-black-and-white.jpg)
 
+Sepia version that was tweeted
+
+![](demo-photos/favorite-sepia.jpg)
+
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 
 ## How the Program and GitHub Actions Workflow Work

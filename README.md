@@ -37,7 +37,7 @@ Table of Contents
 
 ## Demo Videos
 
-A 2 minute demo video is coming. Here is a 16 minute [demo video](https://youtu.be/Uo-Ve5W76SY) that goes into greater detail about how the program works.
+A 2 minute [project demo video](https://youtu.be/wSUixTOJYlU) submitted to Stanford Code in Place as part of course requirement. A 16 minute [project demo video](https://youtu.be/Uo-Ve5W76SY) that I made for personal use to explain the project in greater detail.
 
 ## Image Filter Algorithm Examples
 

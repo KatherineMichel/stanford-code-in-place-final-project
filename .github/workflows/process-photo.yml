@@ -9,7 +9,7 @@ name: Process Photo
 # At intervals specified by the schedule, run this workflow
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'
       
 # Create a development environment
 jobs:

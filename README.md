@@ -99,7 +99,7 @@ Black and white version that was tweeted
 
 Sepia version that was tweeted
 
-![](demo-photos/favorite-sepia.jpg)
+![](demo-photos/favorite-sepia.png)
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 

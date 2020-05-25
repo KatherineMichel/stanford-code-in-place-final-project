@@ -236,6 +236,7 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 ## Possible Enhancements
 
+* Suggestion by Michael Herman (@mjhea0): "Make the unsplash collection dynamic and add the bot to the GitHub marketplace: https://github.com/marketplace?type=actions"
 * Add PyPI packaging configurations to the GitHub repo where the code is hosted
 * Create a GitHub Action that can auto-publish the package when a release is tagged on GitHub; tag the release and verify published to PyPI
 * Create the option to publish to the PyPI test instance first

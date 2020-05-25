@@ -228,6 +228,14 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 ## Video Agenda
 
+### Short Demo
+
+* Introduction (what project is about)
+* Explain how `photo.py` file works
+* Run local development example
+* Show tweet posted to Twitter account
+* Show GitHub Action workflow file and Actions tab build info
+
 ### Long Demo
 
 * Introduction (what project is about)

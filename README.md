@@ -4,7 +4,7 @@
 
 ![](simba.png)
 
-Simba; Photo Credit: Chris Piech
+Simba; Photo Credit: [Chris Piech](https://github.com/chrispiech)
 
 [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) was inspired by Simba, the adorable Stanford Code in Place dog. Using [Python](https://www.python.org/) programming language and [Requests](https://requests.readthedocs.io/en/master/), [Pillow](https://pillow.readthedocs.io/en/stable/), and [Twython](https://twython.readthedocs.io/en/latest/) libraries, I created a [program](photo.py) that downloads a random pet photo from the Unsplash curated "[Personable Pets](https://unsplash.com/collections/2489501/personable-pets)" collection, modifies it with a randomly chosen image filter algorithm, and tweets the image on the [Simba Friends Bot](https://twitter.com/SimbaFriendsBot) Twitter account. 
 
@@ -240,7 +240,7 @@ In our assignment instructions, it was suggested that we use milestones. These w
 
 ## Possible Enhancements
 
-* Suggestion by Michael Herman (@mjhea0): "Make the unsplash collection dynamic and add the bot to the GitHub marketplace: https://github.com/marketplace?type=actions"
+* Suggestion by [Michael Herman](https://github.com/mjhea0): "Make the unsplash collection dynamic and add the bot to the GitHub marketplace: https://github.com/marketplace?type=actions"
 * Add PyPI packaging configurations to the GitHub repo where the code is hosted
 * Create a GitHub Action that can auto-publish the package when a release is tagged on GitHub; tag the release and verify published to PyPI
 * Create the option to publish to the PyPI test instance first

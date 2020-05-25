@@ -15,6 +15,7 @@ Initially, I got the bot working locally. But my stretch goal was to figure out 
 Table of Contents
 -----------------
 
+* [Demo Videos](#demo-videos)
 * [Image Filter Algorithm Examples](#image-filter-algorithm-examples)
 * [My Favorite Example So Far](#my-favorite-example-so-far)
 * [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
@@ -33,6 +34,10 @@ Table of Contents
   * [Milestone 6- Submit Assignment](#milestone-6--submit-assignment)
 * [Video Agenda](#video-agenda)
 * [Possible Enhancements](#possible-enhancements)
+
+## Demo Videos
+
+A 2 minute demo video is coming. Here is a 16 minute [demo video](https://youtu.be/Uo-Ve5W76SY) that goes into greater detail about how the program works.
 
 ## Image Filter Algorithm Examples
 

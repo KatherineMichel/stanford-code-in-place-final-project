@@ -1,8 +1,8 @@
 # Stanford Code in Place Final Project
 
-## Simba Friends Twitter Bot
+![Process Photo GitHub Action](https://action-badges.now.sh/KatherineMichel/stanford-code-in-place-final-project)
 
-![badge](https://action-badges.now.sh/KatherineMichel/stanford-code-in-place-final-project)
+## Simba Friends Twitter Bot
 
 ![](simba.png)
 

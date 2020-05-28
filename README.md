@@ -2,7 +2,7 @@
 
 ## Simba Friends Twitter Bot
 
-[![Actions Status](https://github.com/KatherineMichel/stanford-code-in-place-final-project/workflows/process-photo/badge.svg)](https://github.com/KatherineMichel/stanford-code-in-place-final-project/actions)
+![badge](https://action-badges.now.sh/KatherineMichel/stanford-code-in-place-final-project)
 
 ![](simba.png)
 

@@ -2,6 +2,8 @@
 
 ## Simba Friends Twitter Bot
 
+https://github.com/KatherineMichel/stanford-code-in-place-final-project/workflows/process-photo/badge.svg
+ 
 ![](simba.png)
 
 Simba; Photo Credit: [Chris Piech](https://github.com/chrispiech)

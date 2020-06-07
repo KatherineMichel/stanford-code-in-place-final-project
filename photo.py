@@ -1,5 +1,6 @@
 # Import the Python standard libraries needed to run the code
 import os
+
 # from os.path import exists
 import random
 
@@ -16,16 +17,19 @@ twitter = Twython(
     os.environ.get("OAUTH_TOKEN_SECRET"),
 )
 
-def main():   
+
+def main():
     # Create the URL for the random image and set the image download path
     file_number = random.randrange(1, 278)
-    file_url = "https://source.unsplash.com/collection/2489501/" + str(file_number) + "/"
-    file_path = str(file_number) + '.' + 'jpg'
+    file_url = (
+        "https://source.unsplash.com/collection/2489501/" + str(file_number) + "/"
+    )
+    file_path = str(file_number) + "." + "jpg"
     # file_path = 'photos/' + str(file_number) + '.' + 'jpg'
 
     # Use the Requests library to download and close the file
     response = requests.get(file_url)
-    file = open(file_path, 'wb')
+    file = open(file_path, "wb")
     file.write(response.content)
     file.close()
 
@@ -36,95 +40,116 @@ def main():
     new_image.show()
 
     # Randomly choose an image filter algorithm function from a list and call the function to apply the filter to the image
-    choices = [no_change, black_and_white_algorithm, sepia_algorithm, blur_algorithm, unsharp_mask_algorithm, kernel_algorithm, negative_algorithm]
+    choices = [
+        no_change,
+        black_and_white_algorithm,
+        sepia_algorithm,
+        blur_algorithm,
+        unsharp_mask_algorithm,
+        kernel_algorithm,
+        negative_algorithm,
+    ]
     algorithm = random.choice(choices)(new_image, file_path)
-    
+
     # Open the modified image
-    modified_image = open(file_path, 'rb')
+    modified_image = open(file_path, "rb")
 
     # Use Twython library to upload and tweet the modified image, optionally with a `status` message
-    response = twitter.upload_media(media=modified_image, media_type='image', media_category='tweet_image')
-    twitter.update_status(status='', media_ids=[response['media_id']])
+    response = twitter.upload_media(
+        media=modified_image, media_type="image", media_category="tweet_image"
+    )
+    twitter.update_status(status="", media_ids=[response["media_id"]])
 
     # Call the `remove_file()` function to delete the image
     remove_file(file_path)
- 
+
+
 # Return original file, no algorithm applied
 def no_change(new_image, file_path):
     modified_image = new_image
     save_image(modified_image, file_path)
 
+
 # Apply the "Black and White" Algorithm
 def black_and_white_algorithm(new_image, file_path):
-    modified_image = new_image.convert('L')
+    modified_image = new_image.convert("L")
     save_image(modified_image, file_path)
+
 
 # Apply the "Sepia" Algorithm
 def sepia_algorithm(new_image, file_path):
 
     width, height = new_image.size
-    sepia_image = Image.new("RGB",(width, height))
+    sepia_image = Image.new("RGB", (width, height))
     raw_pixels = new_image.load()
     sepia_pixels = sepia_image.load()
 
     for y in range(height):
         for x in range(width):
-            R,G,B = raw_pixels[x,y]
-            oR = (R*.393) + (G*.769) + (B*.189)
-            oG = (R*.349) + (G*.686) + (B*.168)
-            oB = (R*.272) + (G*.534) + (B*.131)
-            sepia_pixels[x,y] = (int(oR),int(oG),int(oB))
+            R, G, B = raw_pixels[x, y]
+            oR = (R * 0.393) + (G * 0.769) + (B * 0.189)
+            oG = (R * 0.349) + (G * 0.686) + (B * 0.168)
+            oB = (R * 0.272) + (G * 0.534) + (B * 0.131)
+            sepia_pixels[x, y] = (int(oR), int(oG), int(oB))
 
     modified_image = sepia_image
     save_image(modified_image, file_path)
 
+
 # Apply a "Blur" Algorithm
 def blur_algorithm(new_image, file_path):
-    modified_image = new_image.filter(ImageFilter.GaussianBlur(radius = 2))
+    modified_image = new_image.filter(ImageFilter.GaussianBlur(radius=2))
     # modified_image = new_image.filter(ImageFilter.BLUR)
     # modified_image = new_image.filter(ImageFilter.BoxBlur(radius = 2))
     save_image(modified_image, file_path)
 
+
 # Apply the "Unsharp Mask" Algorithm
 def unsharp_mask_algorithm(new_image, file_path):
-    modified_image = new_image.filter(ImageFilter.UnsharpMask(radius = 6))
+    modified_image = new_image.filter(ImageFilter.UnsharpMask(radius=6))
     save_image(modified_image, file_path)
+
 
 # Apply the "Kernel" Algorithm
 def kernel_algorithm(new_image, file_path):
-    modified_image = new_image.filter(ImageFilter.Kernel((3, 3), 
-       (-1, -1, -1, -1, 9, -1, -1, -1, -1), 1, 0)) 
+    modified_image = new_image.filter(
+        ImageFilter.Kernel((3, 3), (-1, -1, -1, -1, 9, -1, -1, -1, -1), 1, 0)
+    )
     save_image(modified_image, file_path)
+
 
 # Apply the "Negative" Algorithm
 def negative_algorithm(new_image, file_path):
 
     width, height = new_image.size
-    negative_image = Image.new("RGB",(width, height))
+    negative_image = Image.new("RGB", (width, height))
     raw_pixels = new_image.load()
     negative_pixels = negative_image.load()
 
     for y in range(height):
         for x in range(width):
-            R,G,B = raw_pixels[x,y]
-            oR = (R*.393) + (G*.769) + (B*.189)
-            oG = (R*.349) + (G*.686) + (B*.168)
-            oB = (R*.272) + (G*.534) + (B*.131)
-            negative_pixels[x,y] = (255-R,255-G,255-B)
+            R, G, B = raw_pixels[x, y]
+            oR = (R * 0.393) + (G * 0.769) + (B * 0.189)
+            oG = (R * 0.349) + (G * 0.686) + (B * 0.168)
+            oB = (R * 0.272) + (G * 0.534) + (B * 0.131)
+            negative_pixels[x, y] = (255 - R, 255 - G, 255 - B)
 
     modified_image = negative_image
     save_image(modified_image, file_path)
-    
+
+
 # Save modified image and return; optionally, show the image after the transformation
 def save_image(modified_image, file_path):
     modified_image.show()
     modified_image.save(file_path)
     return modified_image
 
+
 # If file exists, remove file
 def remove_file(file_path):
     if os.path.exists(file_path):
         os.remove(file_path)
 
-if __name__ == "__main__": 
-    main() 
+
+if __name__ == "__main__":
+    main()

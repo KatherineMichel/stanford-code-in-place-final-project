@@ -21,6 +21,7 @@ Table of Contents
 * [Image Filter Algorithm Examples](#image-filter-algorithm-examples)
 * [My Favorite Example So Far](#my-favorite-example-so-far)
 * [How The Program and GitHub Actions Workflow Work](#how-the-program-and-github-actions-workflow-work)
+* [Dependencies](#dependencies)
 * [Local Environment Versus GitHub Actions Environment](#local-environment-versus-github-actions-environment)
   * [I Prefer GitHub Actions](#i-prefer-github-actions)
 * [Project Set Up](#project-set-up)
@@ -108,6 +109,18 @@ Sepia version that was tweeted
 ## How the Program and GitHub Actions Workflow Work
 
 To better understand how the program works, read the comments in the [program](photo.py) or read the [Milestones](#milestones) section. To better understand how the GitHub Actions "Process Photo" workflow works, read the comments in the [workflow](.github/workflows/process-photo.yml) file.
+
+:top: <sub>[**Back to Top**](#table-of-contents)</sub>
+
+## Dependencies
+
+Critical
+* [Requests](https://requests.readthedocs.io/en/master/)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
+* [Twython](https://twython.readthedocs.io/en/latest/)
+
+Code Formatting
+* [Black](https://black.readthedocs.io/)
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>
 

@@ -37,6 +37,8 @@ Table of Contents
   * [Milestone 6- Submit Assignment](#milestone-6--submit-assignment)
 * [Video Agenda](#video-agenda)
 * [Possible Enhancements](#possible-enhancements)
+* [Code of Conduct](#code-of-conduct)
+* [Copyright](#copyright)
 
 ## Demo Videos
 
@@ -274,5 +276,17 @@ In our assignment instructions, it was suggested that we use milestones. These w
 * Add a photographer credit (not required by Unsplash) as the status update
 * Add additional image filter algorithms (ex. blue or red filter)
 * Create an `if` `else` statement to check if a photo exists before downloading (in case of an error that caused a photo to be downloaded, but not deleted); this might be irrelevant for GitHub Actions, if the workspace is destroyed after it runs
+
+:top: <sub>[**Back to Top**](#table-of-contents)</sub>
+
+## Code of Conduct
+
+Those who engage with this project are expected to follow my [Code of Conduct](https://github.com/KatherineMichel/.github/blob/master/CODE_OF_CONDUCT.md). 
+
+:top: <sub>[**Back to Top**](#table-of-contents)</sub>
+
+## Copyright
+
+© 2020-Present Katherine Michel. All Rights Reserved.
 
 :top: <sub>[**Back to Top**](#table-of-contents)</sub>

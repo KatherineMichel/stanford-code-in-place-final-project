@@ -1,6 +1,5 @@
 # Import the Python standard libraries needed to run the code
 import os
-
 # from os.path import exists
 import random
 
